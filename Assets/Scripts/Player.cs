@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
     public float velocity = 2.4f;
     private Rigidbody rigidbody;
+    public int Score;
+    public GameObject scoretxt;
     void Start()
     {
         thisAnimation = GetComponent<Animation>();
@@ -37,6 +39,14 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "obstacle")
         {
             SceneManager.LoadScene(1);
+        }
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "score")
+        {
+            Score++;
+            scoretxt.GetComponent<Text>().text = "SCORE : " + Score;
         }
     }
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text Txt_Score = null;
     [SerializeField] private Text Txt_Message = null;
     private int Score = 0;
+    
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         if (Time.timeScale == 0 && Input.GetKeyDown(KeyCode.Return))
             StartGame();
+        
     }
 
     public void UpdateScore(int value)
