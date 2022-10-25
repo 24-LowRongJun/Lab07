@@ -419,12 +419,17 @@ PrefabInstance:
     - target: {fileID: 7942643918165592038, guid: 6c6e5f222f546d84ea2769878189e2dd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 97.5
+      value: 107.95
       objectReference: {fileID: 0}
     - target: {fileID: 7942643918165592038, guid: 6c6e5f222f546d84ea2769878189e2dd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942643918165592038, guid: 6c6e5f222f546d84ea2769878189e2dd,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180.8981
       objectReference: {fileID: 0}
     - target: {fileID: 7942643919102861665, guid: 6c6e5f222f546d84ea2769878189e2dd,
         type: 3}
@@ -623,6 +628,10 @@ PrefabInstance:
       propertyPath: velocity
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1221792059, guid: fa616eb311850a54498fbc4920bda0fa, type: 3}
+      propertyPath: scoretxt
+      value: 
+      objectReference: {fileID: 1954424615}
     - target: {fileID: 1111274631518572476, guid: fa616eb311850a54498fbc4920bda0fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -695,3 +704,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa616eb311850a54498fbc4920bda0fa, type: 3}
+--- !u!1 &1954424615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7942643918165592037, guid: 6c6e5f222f546d84ea2769878189e2dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 753871820}
+  m_PrefabAsset: {fileID: 0}
