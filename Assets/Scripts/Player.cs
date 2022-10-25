@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -23,6 +25,18 @@ public class Player : MonoBehaviour
             thisAnimation.Play();
             rigidbody.velocity = Vector2.up * velocity;
         }
+        if (transform.position.y <= -4.5)
+        {
+            SceneManager.LoadScene(1);
+        }
             
+    }
+    
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "obstacle")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
